@@ -1,0 +1,67 @@
+.el-backtop {
+  color: #1c2a77;
+}
+
+.pagination {
+  .el-pagination.is-background .el-pager li:not(.is-disabled).is-active {
+    background-color: #6d7278;
+
+    &:hover {
+      color: #ffffff;
+      border: none;
+    }
+  }
+  .el-pagination.is-background .el-pager li {
+    margin: 0 8px;
+  }
+  .el-pagination .btn-next .el-icon,
+  .el-pagination .btn-prev .el-icon {
+    font-size: 22px;
+  }
+
+  .el-pager li {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .el-pagination .btn-prev,
+  .el-pagination .btn-next {
+    border: none !important;
+  }
+
+  .el-pagination.is-background .btn-next,
+  .el-pagination.is-background .btn-prev,
+  .el-pagination.is-background .el-pager li {
+    background: none;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    border-radius: 4px;
+
+    &:hover {
+      background: #1c2a77;
+      color: #ffffff;
+      border-color: #1c2a77;
+    }
+
+    &:active {
+      color: #ff8200;
+    }
+  }
+}
+
+// normal 默认主题的自定义样式
+%theme-normal-custom {
+  .custom-scrollbar {
+    // 滚动条样式
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #c7c7c7;
+      border-radius: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(#d6d4d4, 0.3);
+    }
+  }
+}

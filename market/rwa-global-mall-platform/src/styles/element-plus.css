@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/** 自定义 Element Plus 样式 */
+.el-card {
+  background-color: var(--el-bg-color);
+}
+
+@media screen and (max-width: 768px) {
+  .el-pagination .el-pagination__total,
+  .el-pagination .el-pagination__sizes,
+  .el-pagination .el-pagination__jump,
+  .el-pagination .btn-prev,
+  .el-pagination .btn-next {
+    display: none !important;
+  }
+}
